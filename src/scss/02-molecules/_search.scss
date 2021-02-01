@@ -1,4 +1,15 @@
+.search {
+  & {
+    @include query($media-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }    
+  }
+}
+
 .search__input {
+  position: relative;
 
   input {
     background: #fff;
@@ -8,6 +19,19 @@
     padding-left: 10px;
     height: 50px;
     width: 100%;
+
+    & {
+      @include query($media-md) {
+        height: 70px;
+        width: 518px;
+      }    
+    }
+
+    & {
+      @include query($media-lg) {
+        width: 780px;
+      }    
+    }
   
     &::placeholder {
       font-family: HelveticaNeue-Bold;
@@ -20,41 +44,43 @@
 }
 
 .search__input--error {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0002f+0,dc0015+100 */
-  background: #f0002f; /* Old browsers */
-  background: -moz-linear-gradient(top, #f0002f 0%, #dc0015 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f0002f 0%,#dc0015 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f0002f 0%,#dc0015 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-radius: 3px;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0002f', endColorstr='#dc0015',GradientType=0 ); /* IE6-9 */
-  position: relative;
+  height: 96px;
 
   input {
-    margin: 3px;
-    width: calc(100% - 6px);
+    border: 3px solid #DC0015;
+    border-radius:3px 3px  0 0;
   }
 
-  &:after {
-    bottom: 2px;
-    content: 'Please add a valid email address';
-    color: #FFFFFF;
+  span {
+    background-color: #DC0015;
+    border-radius: 0 0 3px 3px;
+    color: #fff;
+    display: block;
     font-size: 14px;
-    left: 13px;
     letter-spacing: 0;
     line-height: 18px;
+    padding: 3px 14px 3px 14px;
     position: absolute;
-    width: 100%;
+  }
+
+  & {
+    @include query($media-lg) {
+      width: 780px;
+    }    
   }
 }
 
 .search__lock  {
+  width: 100%;
   img {
     padding-right: 10px;
   }
   
   width: 256px;
-}
 
-.search__input--error {
-  height: 76px;
+  & {
+    @include query($media-md) {
+      width: 100%;
+    }    
+  }
 }

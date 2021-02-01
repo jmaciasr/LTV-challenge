@@ -1,12 +1,22 @@
+footer {
+  align-items: center;
+}
+
 .footer__text {
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
+
+  & {
+    @include query($media-md) {
+      width: 575px;
+    }    
+  }
 }
 
 .footer__links {
   color: $color-primary;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
 
   span {
     font-size: 14px;

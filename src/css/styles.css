@@ -165,9 +165,14 @@ h3 {
   margin: 0 auto;
   max-width: 290px;
 }
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    max-width: 718px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .main-wrapper {
-    max-width: 946px;
+    max-width: 980px;
   }
 }
 
@@ -175,9 +180,20 @@ h3 {
   max-width: 280px;
   margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+  .sub-wrapper {
+    max-width: 718px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sub-wrapper {
+    max-width: 980px;
+  }
+}
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .justify-between {
@@ -322,7 +338,7 @@ p {
 }
 @media only screen and (min-width: 992px) {
   .btn {
-    padding: 21px 0;
+    padding: 23px 0;
   }
 }
 
@@ -331,6 +347,12 @@ p {
   box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
   border-radius: 6px;
   width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .btn-primary {
+    max-height: 70px;
+    max-width: 180px;
+  }
 }
 
 .feature__number {
@@ -349,6 +371,12 @@ p {
 .feature__text {
   max-width: 223px;
 }
+@media only screen and (min-width: 768px) {
+  .feature__text {
+    max-width: calc(100% - 50px);
+    padding: 0 20px;
+  }
+}
 .feature__text h3 {
   margin-bottom: 8px;
 }
@@ -360,6 +388,26 @@ p {
   line-height: 24px;
 }
 
+.features__col {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .features__col {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.search__input {
+  position: relative;
+}
 .search__input input {
   background: #fff;
   border: none;
@@ -368,6 +416,17 @@ p {
   padding-left: 10px;
   height: 50px;
   width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .search__input input {
+    height: 70px;
+    width: 518px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .search__input input {
+    width: 780px;
+  }
 }
 .search__input input::placeholder {
   font-family: HelveticaNeue-Bold;
@@ -378,45 +437,40 @@ p {
 }
 
 .search__input--error {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0002f+0,dc0015+100 */
-  background: #f0002f;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, #f0002f 0%, #dc0015 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f0002f 0%, #dc0015 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f0002f 0%, #dc0015 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  border-radius: 3px;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f0002f", endColorstr="#dc0015",GradientType=0 );
-  /* IE6-9 */
-  position: relative;
+  height: 96px;
 }
 .search__input--error input {
-  margin: 3px;
-  width: calc(100% - 6px);
+  border: 3px solid #DC0015;
+  border-radius: 3px 3px 0 0;
 }
-.search__input--error:after {
-  bottom: 2px;
-  content: "Please add a valid email address";
-  color: #FFFFFF;
+.search__input--error span {
+  background-color: #DC0015;
+  border-radius: 0 0 3px 3px;
+  color: #fff;
+  display: block;
   font-size: 14px;
-  left: 13px;
   letter-spacing: 0;
   line-height: 18px;
+  padding: 3px 14px 3px 14px;
   position: absolute;
-  width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .search__input--error {
+    width: 780px;
+  }
 }
 
 .search__lock {
+  width: 100%;
   width: 256px;
 }
 .search__lock img {
   padding-right: 10px;
 }
-
-.search__input--error {
-  height: 76px;
+@media only screen and (min-width: 768px) {
+  .search__lock {
+    width: 100%;
+  }
 }
 
 .main-text p {
@@ -424,15 +478,24 @@ p {
   line-height: 28px;
 }
 
+footer {
+  align-items: center;
+}
+
 .footer__text {
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .footer__text {
+    width: 575px;
+  }
+}
 
 .footer__links {
   color: #004A80;
-  margin-bottom: 25px;
+  margin: 0 auto 25px auto;
 }
 .footer__links span {
   font-size: 14px;

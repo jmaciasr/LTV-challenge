@@ -3,8 +3,14 @@
   max-width: 290px;
 
   & {
+    @include query($media-md) {
+      max-width: 718px;
+    }    
+  }
+
+  & {
     @include query($media-lg) {
-      max-width: 946px;
+      max-width: 980px;
     }    
   }
 }
@@ -12,10 +18,23 @@
 .sub-wrapper {
   max-width: 280px;
   margin: 0 auto;
+  
+  & {
+    @include query($media-md) {
+      max-width: 718px;
+    }    
+  }
+
+  & {
+    @include query($media-lg) {
+      max-width: 980px;
+    }    
+  }
 }
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .justify-between {
