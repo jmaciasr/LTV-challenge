@@ -1,0 +1,20 @@
+.btn {
+  color: $color-primary;
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 0.93px;
+  text-align: center;
+  padding: 12px 0;
+
+  @include query($media-lg) {
+    padding: 21px 0;
+  }    
+}
+
+.btn-primary {
+  background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
+  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+  border-radius: 6px;
+  width: 100%;
+}

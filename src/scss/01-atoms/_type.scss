@@ -1,0 +1,48 @@
+@font-face {
+  font-family: helveticaNeue;
+  src: url(../../fonts/HelveticaNeuBold.ttf);
+}
+
+@font-face {
+  font-family: helveticaNeueBold;
+  src: url(../../fonts/HelveticaNeuBold.ttf);
+}
+
+p {
+  color: #4A4A4A;
+  font: normal 400 18px/20px $font-base;
+  margin: 0;
+}
+
+.paragraph-main {
+  color: #000;
+}
+
+.paragraph-primary {
+  color: #fff;
+}
+
+.paragraph-secundary {
+  color: $color-secundary;
+  font-weight: bold;
+}
+
+.paragraph-tertiary {
+  color: #999;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-16 {
+  font-size: 16px;
+}

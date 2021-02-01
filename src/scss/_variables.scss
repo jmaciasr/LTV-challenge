@@ -1,0 +1,24 @@
+//fonts
+$font-base: helveticaNeue, sans-serif;
+$font-size: 14px;
+
+//colors
+$color-primary: #004A80;
+$color-secundary: #F6BC25;
+$color-tertiary: #888888;
+
+//media querys
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
+$media-xl: 1200px;
+
+// Inside components
+$space-base: 2rem;
+
+// Between components
+$space-out-small: 1.25rem; // 20px
+$space-out-medium: 2rem; // 32px
+$space-out-large: 4rem; // 56px
+$space-out-x-large: 10rem; // 160px
+$space-out-xx-large: 15rem; // 240px

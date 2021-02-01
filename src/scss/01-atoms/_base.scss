@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+header,
+main,
+section,
+footer {
+  font-family: $font-base;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+// Remove the margin in all browsers (opinionated).
+body {
+  background: #fff;
+  color: #000;
+  min-height: 100%;
+  font: 1em/1.5 $font-base; // 1
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  -ms-text-size-adjust: 100%; // 3
+  -webkit-text-size-adjust: 100%; // 3
+  overflow: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Remove text-shadow in selection highlight:
+// https://twitter.com/miketaylr/status/12228805301
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+// Add the correct display in IE 9-.
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main,
+details,
+menu {
+  display: block;
+}
+
+header {
+  background-color: $color-primary;
+  margin-bottom: $space-base;
+  padding-top: 20px;
+}
+
+main {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,e6e6e6+98 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 98%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 98%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+}
+
+// Add the correct margin in IE 8.
+figure {
+  margin: 1em 40px;
+}
+
+// Add the correct display in all browsers.
+summary {
+  display: list-item;
+}
+
+// Add the correct display in IE 9-.
+canvas {
+  display: inline-block;
+}
+
+// Add the correct display in IE.
+template {
+  display: none;
+}
+
+// reset button styles
+button {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+
+  &:hover {
+    cursor: pointer;   
+  }
+}
+
+
+// inputs
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+// reset  lists
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}

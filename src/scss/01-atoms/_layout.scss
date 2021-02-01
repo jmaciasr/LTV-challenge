@@ -1,0 +1,35 @@
+.main-wrapper {
+  margin: 0 auto;
+  max-width: 290px;
+
+  & {
+    @include query($media-lg) {
+      max-width: 946px;
+    }    
+  }
+}
+
+.sub-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-items-star {
+  align-items: flex-start;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}

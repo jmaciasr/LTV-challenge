@@ -1,0 +1,15 @@
+.footer__text {
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.footer__links {
+  color: $color-primary;
+  margin-bottom: 25px;
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

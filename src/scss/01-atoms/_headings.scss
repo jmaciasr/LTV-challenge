@@ -1,0 +1,49 @@
+// Normalize
+// ==========================================================================
+// Correct the font size and margin on `h1` elements within `section` and
+// `article` contexts in Chrome, Firefox, and Safari.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2E3133;
+  letter-spacing: 0.02em;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 0;
+
+  // @include query(624px) {
+
+  // }
+}
+
+h2 {
+  color: $color-primary;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 0;
+
+  // @include query(624px) {
+    
+  // }
+}
+
+h3 {
+  color: $color-primary;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+
+  // @include query(624px) {
+    
+  // }
+}

@@ -1,0 +1,43 @@
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.bz2
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.tgz
+!wp-includes/**/*.gz
+package-lock.json
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+._*
+
+# Vim generated files #
+######################
+*.un~
+
+# SASS #
+##########
+.sass-cache
+
+# Lando #
+.lando.yml
+.idea
+.lando.php.ini
+
+# Custom theme #
+############
+edutours-template/node_modules
