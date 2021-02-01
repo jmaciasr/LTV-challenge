@@ -75,7 +75,6 @@ main {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#e6e6e6",GradientType=0 );
   /* IE6-9 */
-  margin-bottom: 14px;
 }
 
 figure {
@@ -302,6 +301,14 @@ h3 {
   paddingg-bottom: 40px;
 }
 
+.spacer-out-small {
+  margin-bottom: 14px;
+}
+
+.spacer-out-medium {
+  margin-bottom: 15px;
+}
+
 @font-face {
   font-family: helveticaNeue;
   src: url(../../fonts/HelveticaNeuBold.ttf);
@@ -408,10 +415,12 @@ p {
 
 .search__btn {
   margin-bottom: 20px;
+  height: 50px;
 }
 @media only screen and (min-width: 768px) {
   .search__btn {
     font-size: 30px;
+    height: 70px;
   }
 }
 
@@ -504,6 +513,10 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.result-serch {
+  background-color: #004A80;
 }
 
 .search__input {

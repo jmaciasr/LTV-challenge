@@ -36,9 +36,11 @@
 
 .search__btn {
   margin-bottom: 20px;
+  height: 50px;
 
   @include query($media-md) {
     font-size: 30px;
+    height: 70px;
   }   
 }
 
