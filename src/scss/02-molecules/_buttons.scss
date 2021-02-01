@@ -24,4 +24,12 @@
       max-width: 180px;
     }    
   }
+
+  &:hover {
+    background: #F2DA56;
+  }
+
+  &:focus {
+    background: #A6953B;
+  }
 }

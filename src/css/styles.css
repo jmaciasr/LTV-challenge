@@ -354,6 +354,12 @@ p {
     max-width: 180px;
   }
 }
+.btn-primary:hover {
+  background: #F2DA56;
+}
+.btn-primary:focus {
+  background: #A6953B;
+}
 
 .feature__number {
   align-items: center;
