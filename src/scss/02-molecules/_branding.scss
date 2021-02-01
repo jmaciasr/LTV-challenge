@@ -1,5 +1,11 @@
 .branding {
+  margin-bottom: 30px;
 
+  & {
+    @include query($media-md) {
+      margin-bottom: 50px;
+    }    
+  }
 }
 
 .branding__icons {

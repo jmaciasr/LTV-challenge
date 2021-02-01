@@ -41,10 +41,15 @@
       line-height: 18px;
     }
   }
+
+  span {
+    display: none;
+  }
 }
 
 .search__input--error {
   height: 96px;
+  margin-bottom: 8px;
 
   input {
     border: 3px solid #DC0015;
@@ -71,16 +76,24 @@
 }
 
 .search__lock  {
+  margin-top: 30px;
   width: 100%;
+
   img {
     padding-right: 10px;
   }
-  
-  width: 256px;
 
-  & {
-    @include query($media-md) {
-      width: 100%;
-    }    
+  p {
+    width: calc(100% - 25px);
   }
+  
+}
+
+.search-tilte {
+  margin-bottom: 18px;
+  line-height: 1.2em;
+
+  @include query($media-md) {
+    margin-bottom: 30px;
+  } 
 }

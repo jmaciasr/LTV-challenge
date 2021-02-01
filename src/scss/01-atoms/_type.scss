@@ -12,6 +12,14 @@ p {
   color: #4A4A4A;
   font: normal 400 18px/20px $font-base;
   margin: 0;
+
+  @include query($media-md) {
+    font-size: 20px;
+  }
+
+  @include query($media-lg) {
+    font-size: 24px;
+  }
 }
 
 .paragraph-main {

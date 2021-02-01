@@ -33,3 +33,26 @@
     background: #A6953B;
   }
 }
+
+.search__btn {
+  margin-bottom: 20px;
+
+  @include query($media-md) {
+    font-size: 30px;
+  }   
+}
+
+.search__lock {
+
+  p {
+    margin-bottom: 17px;
+  
+    @include query($media-md) {
+      margin-bottom: 60px;
+    }
+  
+    @include query($media-lg) {
+      margin-bottom: 95px;
+    }   
+  }
+}

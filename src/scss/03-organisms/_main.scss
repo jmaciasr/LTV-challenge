@@ -2,5 +2,15 @@
   p {
     letter-spacing: 0;
     line-height: 28px;
+    margin-bottom: 20px;
+
+    @include query($media-md) {
+      margin-bottom: 30px;
+    }  
+
+    @include query($media-lg) {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }    
   }
 }

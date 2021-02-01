@@ -6,10 +6,17 @@ footer {
   font-size: 15px;
   letter-spacing: 0;
   line-height: 20px;
+  margin-bottom: 14px;
 
   & {
     @include query($media-md) {
       width: 575px;
+    }    
+  }
+
+  & {
+    @include query($media-xl) {
+      width: 960px;
     }    
   }
 }
