@@ -1,0 +1,64 @@
+.result-card  {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.result-card__img {
+
+  div {
+    background-color: $color-primary;
+    border-radius: 50%;
+    height: 90px;
+    padding: 25px;
+    width: 90px;
+    img {
+      max-height: 100%;
+      width: 100%;
+    }
+  }
+  
+}
+
+.result-card__content {
+  width: calc(100% - 110px);
+}
+
+.result-card-content__person {
+  .person-name {
+    margin-bottom: 5px;
+  }
+
+  .person-description {
+    color: #000;
+  }
+}
+
+.person-name {
+  color: #004A80;
+  font-family: HelveticaNeue-Bold;
+  font-size: 32px;
+  letter-spacing: 0;
+
+}
+
+
+.person-description {
+  color: #000;
+}
+
+.result-card-content__information {
+  div:nth-child(1),
+  div:nth-child(2) {
+    width: 50%;
+
+    strong {
+      font-family: HelveticaNeue-Bold;
+      font-size: 22px;
+      color: $color-primary;
+      letter-spacing: 0;
+    }
+  }
+
+}
