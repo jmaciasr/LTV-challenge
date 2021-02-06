@@ -27,12 +27,65 @@
     </header>
     <main class="spacer-medium">
       <section class="main-wrapper main-text">
-        <h2 class="text-center">
-          Result
+        <h2 id="resultsTitle" class="text-center">
         </h2>
         <p>
           Look at the result below to see the details of the person you’re searched for.
         </p>
+        <div class="result-card d-flex justify-between">
+          <div class="result-card__img">
+            <div>
+              <img src="/src/img/icn_person.svg" alt="prfole picture">
+            </div>
+          </div>
+          <div class="result-card__content">
+            <div class="result-card-content__person">
+              <p class="person-name">
+                <span id="personName"></span> <span id="personLast"></span>, <span id="personAge"></span>
+              </p>
+              <p id="personDescription" class="person-description">
+              </p>
+            </div>
+            <div class="result-card-content__information d-flex">
+              <div>
+                <div>
+                  <strong>
+                    Address
+                  </strong>
+                  <p id="informationAddress">
+
+                  </p>
+                </div>
+                <div>
+                  <strong>
+                    Email
+                  </strong>
+                  <p id="informationEmail">
+
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <strong>
+                    Phone Numbers
+                  </strong>
+                  <p id="informationNumbers">
+
+                  </p>
+                </div>
+                <div>
+                  <strong>
+                    Relatives
+                  </strong>
+                  <p id="informationRelatives">
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="main-wrapper">
         <div class="sub-wrapper features">
@@ -48,11 +101,11 @@
           <span class="paragraph-secundary bold">Try Again </span>- Make a new search
         </p>
         <div class="sub-wrapper search">
-          <div class="search__input search__input--erro">
-            <input type="email" name="email" placeholder="EMAIL">
+          <div id="inputEmailWrapp" class="search__input">
+            <input id="inputEmail" type="email" name="email" placeholder="EMAIL">
             <span>Please add a valid email address</span>
           </div>
-          <button class="btn btn-primary search__btn">
+          <button id="btnSearch" class="btn btn-primary search__btn">
             GO!
           </button>
           <div class="search__lock d-flex align-items-star">
@@ -78,5 +131,6 @@
         <a class="link link--primary" href="#">Privacy</a>
       </div>
     </footer>
+    <script src="src/js/global.js"></script>
   </body>
 </html>
