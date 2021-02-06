@@ -556,6 +556,7 @@ p {
 .search__input--error {
   height: 96px;
   margin-bottom: 8px;
+  transition: all 0.5s;
 }
 .search__input--error input {
   border: 3px solid #DC0015;
@@ -571,6 +572,7 @@ p {
   line-height: 18px;
   padding: 3px 14px 3px 14px;
   position: absolute;
+  transition: all 0.5s;
 }
 @media only screen and (min-width: 992px) {
   .search__input--error {
@@ -644,6 +646,59 @@ footer {
 .footer__links span {
   font-size: 14px;
   font-weight: bold;
+}
+
+.result-card {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.result-card__img div {
+  background-color: #004A80;
+  border-radius: 50%;
+  height: 90px;
+  padding: 25px;
+  width: 90px;
+}
+.result-card__img div img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.result-card__content {
+  width: calc(100% - 110px);
+}
+
+.result-card-content__person .person-name {
+  margin-bottom: 5px;
+}
+.result-card-content__person .person-description {
+  color: #000;
+}
+
+.person-name {
+  color: #004A80;
+  font-family: HelveticaNeue-Bold;
+  font-size: 32px;
+  letter-spacing: 0;
+}
+
+.person-description {
+  color: #000;
+}
+
+.result-card-content__information div:nth-child(1),
+.result-card-content__information div:nth-child(2) {
+  width: 50%;
+}
+.result-card-content__information div:nth-child(1) strong,
+.result-card-content__information div:nth-child(2) strong {
+  font-family: HelveticaNeue-Bold;
+  font-size: 22px;
+  color: #004A80;
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
