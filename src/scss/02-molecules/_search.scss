@@ -54,6 +54,7 @@
 .search__input--error {
   height: 96px;
   margin-bottom: 8px;
+  transition: all 0.5s;
 
   input {
     border: 3px solid #DC0015;
@@ -70,6 +71,7 @@
     line-height: 18px;
     padding: 3px 14px 3px 14px;
     position: absolute;
+    transition: all 0.5s;
   }
 
   & {
